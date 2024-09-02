@@ -163,7 +163,6 @@ module.exports = function (Topics) {
 
 			// update 'tags' field in topic hash
 			topicData.forEach((topic) => {
-				// topic.tags = topic.tags.map(tagItem => tagItem.value);
 				topic.tags = extractTagValues(topic.tags);
 
 				const index = topic.tags.indexOf(tag);
